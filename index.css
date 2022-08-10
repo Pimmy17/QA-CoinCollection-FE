@@ -135,5 +135,7 @@ article {
 }
 
 input[type=text] {
-    width: 20%;
+    width: 80%;
+    color: #AB7D41;
+    background-color: #FDFAC3;
 }
