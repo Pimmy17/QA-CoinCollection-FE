@@ -1,0 +1,139 @@
+body {
+    background-color: #13286B;
+    color:#FDFAC3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 600%;
+    text-align: center;
+    color: white;
+    text-shadow: #FDFAC3 -5px 5px, #F8B54C -10px 10px, #AB7D41 -15px 15px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+h1:hover {
+    animation: change-color 0.45s 8;
+}
+
+@keyframes change-color {
+  0% {
+    color: white;
+    text-shadow: #FDFAC3 -5px 5px, #F8B54C -10px 10px, #AB7D41 -15px 15px;
+  }
+  33% {
+    color: #AB7D41;
+    text-shadow: white -5px 5px, #FDFAC3 -10px 10px, #F8B54C -15px 15px;
+  }
+  66% {
+    color: #F8B54C;
+    text-shadow: #AB7D41 -5px 5px, white -10px 10px, #FDFAC3 -15px 15px;
+  }
+  100% {
+    color: #FDFAC3;
+    text-shadow: #F8B54C -5px 5px, #AB7D41 -10px 10px, white -15px 15px;
+  }
+}
+
+h4 {
+    color: #F8B54C;
+    font-size: 300%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+h5 {
+    font-size: 200%;
+    color: #F8B54C;
+    margin-bottom: 0%;
+}
+
+nav {
+    background-color: #3870BD;
+    color:#FDFAC3;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.nav-link {
+    color: #FDFAC3;
+}
+
+.nav-link .active {
+    color: #F8B54C;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color:#FDFAC3;
+    font-size: larger;
+}
+
+a:hover {
+    color: #F8B54C;
+}
+
+.btn {
+    background-color: #3870BD;
+    margin-top: 1%;
+}
+
+.dropdown-menu {
+    background-color: #3870BD;
+    margin-top: 1%;
+}
+
+.dropdown-item {
+    color:#FDFAC3;
+}
+
+#home--quote {
+    font-size: 150%;
+}
+
+#marvel-logo {
+    width: 200px;
+    height: 75px;
+}
+
+img {
+    border-radius: 10%;
+}
+
+table {
+    margin: auto;
+    border-style: double;
+    border-color: #FDFAC3;
+    border-radius: 15%;
+    padding: 1%;
+    justify-content: center;
+}
+
+#table-img {
+    width: 50%;
+    height: 40%;
+}
+
+th {
+    padding-left: 20px;
+}
+
+td {
+    padding-left: 20px;
+}
+
+article {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input[type=text] {
+    width: 20%;
+}
