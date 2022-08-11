@@ -139,3 +139,7 @@ input[type=text] {
     color: #AB7D41;
     background-color: #FDFAC3;
 }
+
+#exampleModalLabel {
+    margin-top: 0%;
+}
