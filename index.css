@@ -170,3 +170,25 @@ input[type=text] {
 #model-header-edit {
     transform: translateY(-50px);
 }
+
+
+footer {
+    background-image: url(./coinbanner.jpg);
+    height: 150px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#FDFAC3;
+    font-weight: bolder;
+}
+
+#footer-text {
+    background-color: #13286B;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2px;
+}
+
+#footer-divider {
+    color: #AB7D41;
+}
