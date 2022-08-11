@@ -31,13 +31,53 @@ function addRow(tableID) {
     let newCell3 = newRow.insertCell(3);
     let newText = document.createTextNode(e.country);
     let newText2 = document.createTextNode(e.year);
-    let checkbox = document.createElement("input")
+    let checkbox = document.createElement("input");
 
-    checkbox.type = "checkbox"
+    //Add Coin to Collection
+    const addToCollection = () => {
+        if (e.inCollection === false){
+        const coin = {
+            'inCollection' : true,
+            }
+            console.log(e.inCollection)
+        fetch(`${coinURL}/updateCoin/${e.id}`, {
+            method: "PATCH",
+            body: JSON.stringify(coin),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(response => response.json())
+        .then(model => {
+            console.log(model);
+        })
+        .catch(err => console.error(`error ${err}`))
+    } 
+        else {
+            const coin = {
+                'inCollection' : false
+            }
+            console.log(e.inCollection)
+            fetch(`${coinURL}/updateCoin/${e.id}`, {
+                method: "PATCH",
+                body: JSON.stringify(coin),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(response => response.json())
+            .then(model => {
+                console.log(model);
+            })
+            .catch(err => console.error(`error ${err}`))}
+    }
+
+
+    checkbox.type = "checkbox";
+    checkbox.addEventListener("click", addToCollection);
     newCell0.appendChild(newText);
     newCell1.appendChild(link1);
     newCell2.appendChild(newText2);
     newCell3.appendChild(checkbox);
+
   }
   addRow('coin-database');
  } ))
@@ -88,3 +128,4 @@ const createCoin = () => {
         })
         .catch(err => console.error(`error ${err}`));
 }
+
