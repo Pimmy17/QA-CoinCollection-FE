@@ -52,22 +52,6 @@ function addRow(tableID) {
         })
         .catch(err => console.error(`error ${err}`))
     } 
-        else {
-            const coin = {
-                'inCollection' : false
-            }
-            console.log(e.inCollection)
-            fetch(`${coinURL}/updateCoin/${e.id}`, {
-                method: "PATCH",
-                body: JSON.stringify(coin),
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            }).then(response => response.json())
-            .then(model => {
-                console.log(model);
-            })
-            .catch(err => console.error(`error ${err}`))}
     }
 
 
