@@ -63,12 +63,13 @@ nav {
     color: #FDFAC3;
 }
 
-.nav-link .active {
+#active-link {
     color: #F8B54C;
 }
 
 li {
     list-style: none;
+    font-size: 140%;
 }
 
 a {
@@ -98,11 +99,6 @@ a:hover {
     font-size: 150%;
 }
 
-#marvel-logo {
-    width: 200px;
-    height: 75px;
-}
-
 img {
     border-radius: 10%;
 }
@@ -116,17 +112,14 @@ table {
     justify-content: center;
 }
 
-#table-img {
-    width: 50%;
-    height: 40%;
-}
-
 th {
     padding-left: 20px;
+    font-size: 140%;
 }
 
 td {
     padding-left: 20px;
+    font-size: 120%;
 }
 
 article {
@@ -142,4 +135,14 @@ input[type=text] {
 
 #exampleModalLabel {
     margin-top: 0%;
+}
+
+
+.deleteButton {
+    background: url("./DeleteButton.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
 }
