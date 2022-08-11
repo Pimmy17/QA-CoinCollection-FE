@@ -80,7 +80,8 @@ function addRow(tableID) {
 
 
     //Add In Collection Flag
-        const inCollectionFlag = document.createTextNode("IN");
+        const inCollectionFlag = document.createElement("img");
+        inCollectionFlag.className = "inCollectionFlag";
         const notInCollectionFlag = document.createTextNode("");
 
         let collectionFlag = (e.inCollection ? inCollectionFlag : notInCollectionFlag);
