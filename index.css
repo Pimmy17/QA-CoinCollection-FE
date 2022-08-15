@@ -149,7 +149,7 @@ input[type=text] {
 
 
 .deleteButton {
-    background: url("./DeleteButton.jpg");
+    background: url("./Images/DeleteButton.jpg");
     background-position:center;
     background-repeat:no-repeat;
     background-size: contain;
@@ -159,7 +159,7 @@ input[type=text] {
 }
 
 .inCollectionFlag {
-    background: url("./tickImage.jpg");
+    background: url("./Images/tickImage.jpg");
     background-position:center;
     background-repeat:no-repeat;
     background-size: contain;
@@ -173,7 +173,7 @@ input[type=text] {
 
 
 footer {
-    background-image: url(./coinbanner.jpg);
+    background-image: url(./Images/coinbanner.jpg);
     height: 150px;
     background-position:center;
     background-repeat:no-repeat;
