@@ -12,8 +12,8 @@ const readCoinsInCollection = () => {
         let tableRef = document.getElementById(tableID);
         let newRow = tableRef.insertRow(-1);
         let link1 = document.createElement("a");
-        link1.setAttribute("href", "./individualcoin.html")
-        link1.className = "link";
+        // link1.setAttribute("href", "./individualcoin.html")
+        // link1.className = "link";
         let linkText = document.createTextNode(e.coin_name);
         link1.appendChild(linkText);
       
