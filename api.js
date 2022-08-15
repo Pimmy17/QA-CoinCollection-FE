@@ -20,11 +20,11 @@ function addRow(tableID) {
     let tableRef = document.getElementById(tableID);
     let newRow = tableRef.insertRow(-1);
     let link1 = document.createElement("a");
-    link1.setAttribute("href", "./individualcoin.html")
+    link1.setAttribute("href", "./individualcoin.html");
     link1.className = "link";
     let linkText = document.createTextNode(e.coin_name);
     link1.appendChild(linkText);
-  
+
     let newCell0 = newRow.insertCell(0);
     let newCell1 = newRow.insertCell(1);
     let newCell2 = newRow.insertCell(2);
@@ -50,6 +50,7 @@ function addRow(tableID) {
             }
         }).then(response => response.json())
         .then(model => {
+            document.location.reload(true)
             console.log(model);
         })
         .catch(err => console.error(`error ${err}`))
@@ -71,13 +72,13 @@ function addRow(tableID) {
             }
         }).then(response => console.log(response))
         .then(model => {
+            document.location.reload(true)
             console.log(model);
         })
         .catch(err => console.error(`error ${err}`))
     }
 
     deleteButton.addEventListener("click", deleteCoin);
-
 
     //Add In Collection Flag
         const inCollectionFlag = document.createElement("img");
@@ -94,26 +95,13 @@ function addRow(tableID) {
     newCell4.appendChild(collectionFlag);
     newCell5.appendChild(deleteButton);
 
+    
   }
   addRow('coin-database');
  } ))
     .catch(err => 
     console.error(`error ${err}`));
 };
-
-
-// //View an Individual Coin
-// const readCoinById = () => {
-//     console.log('Here');
-// fetch(`${coinURL}/coins/${id}`)
-//    .then(response => response.json())
-//    .then(model => {
-//     console.log(model)
-
-//      } )
-//         .catch(err => 
-//         console.error(`error ${err}`));
-//     };
 
 //Create a Coin
 const createCoin = () => {
@@ -139,10 +127,14 @@ const createCoin = () => {
             }
         }).then(response => response.json())
         .then(model => {
+            document.location.reload(true)
             console.log(model);
             
         })
         .catch(err => console.error(`error ${err}`));
 }
+
+
+
 
 readAllCoins();
