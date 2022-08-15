@@ -40,6 +40,7 @@ const readCoinsInCollection = () => {
                 }
             }).then(response => response.json())
             .then(model => {
+                document.location.reload(true)
                 console.log(model);
             })
             .catch(err => console.error(`error ${err}`))
