@@ -1,0 +1,194 @@
+body {
+    background-color: #13286B;
+    color:#FDFAC3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 600%;
+    text-align: center;
+    color: white;
+    text-shadow: #FDFAC3 -5px 5px, #F8B54C -10px 10px, #AB7D41 -15px 15px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+h1:hover {
+    animation: change-color 0.45s 8;
+}
+
+@keyframes change-color {
+  0% {
+    color: white;
+    text-shadow: #FDFAC3 -5px 5px, #F8B54C -10px 10px, #AB7D41 -15px 15px;
+  }
+  33% {
+    color: #AB7D41;
+    text-shadow: white -5px 5px, #FDFAC3 -10px 10px, #F8B54C -15px 15px;
+  }
+  66% {
+    color: #F8B54C;
+    text-shadow: #AB7D41 -5px 5px, white -10px 10px, #FDFAC3 -15px 15px;
+  }
+  100% {
+    color: #FDFAC3;
+    text-shadow: #F8B54C -5px 5px, #AB7D41 -10px 10px, white -15px 15px;
+  }
+}
+
+h3 {
+    margin-bottom: 0%;
+}
+
+h4 {
+    color: #F8B54C;
+    font-size: 300%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+h5 {
+    font-size: 200%;
+    color: #F8B54C;
+    margin-bottom: 0%;
+}
+
+nav {
+    background-color: #3870BD;
+    color:#FDFAC3;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.nav-link {
+    color: #FDFAC3;
+}
+
+#active-link {
+    color: #F8B54C;
+}
+
+li {
+    list-style: none;
+    font-size: 140%;
+}
+
+a {
+    color:#FDFAC3;
+    font-size: larger;
+}
+
+a:hover {
+    color: #F8B54C;
+}
+
+.btn {
+    background-color: #3870BD;
+    margin-top: 1%;
+}
+
+.dropdown-menu {
+    background-color: #3870BD;
+    margin-top: 1%;
+}
+
+.dropdown-item {
+    color:#FDFAC3;
+}
+
+#home--quote {
+    font-size: 150%;
+}
+
+img {
+    border-radius: 10%;
+}
+
+table {
+    margin: auto;
+    border-style: double;
+    border-color: #FDFAC3;
+    border-radius: 15%;
+    padding: 1%;
+    justify-content: center;
+}
+
+th {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 140%;
+}
+
+td {
+    padding-left: 30px;
+    font-size: 120%;
+    padding-right: 30px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #FDFAC3;
+}
+
+article {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input[type=text] {
+    width: 80%;
+    color: #AB7D41;
+    background-color: #FDFAC3;
+}
+
+#exampleModalLabel {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+
+.deleteButton {
+    background: url("./Images/DeleteButton.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.inCollectionFlag {
+    background: url("./Images/tickImage.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+#model-header-edit {
+    transform: translateY(-50px);
+}
+
+
+footer {
+    background-image: url(./Images/coinbanner.jpg);
+    height: 150px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#FDFAC3;
+    font-weight: bolder;
+}
+
+#footer-text {
+    background-color: #13286B;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2px;
+}
+
+#footer-divider {
+    color: #AB7D41;
+}
