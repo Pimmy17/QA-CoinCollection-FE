@@ -1,14 +1,11 @@
 const coinURL = "http://localhost:8080/home";
 
-const coinEl = document.querySelector('#coins');
 const denominationEl = document.querySelector('#denomination');
 const yearEl = document.querySelector('#year');
 const coinNameEl = document.querySelector('#coin_name');
 const inCollectionEl = document.querySelector('#incollection');
 const countryEl = document.querySelector('#country');
 const coinDescEl = document.querySelector('#description')
-const currentDatabaseEl = document.querySelector("#current-database");
-const coinDBEl = document.querySelector('#coin-database');
 
 //Read All Coins in Database
 const readAllCoins = () => {
